@@ -73,7 +73,7 @@ else
     $txtlogin = $_POST["txtlogin"];
     $txtsenha = $_POST["txtsenha"];
 
-    // Variável com a senha guardada
+    // Variável com a senha guardadsfda
     $senha = $txtsenha;
     $criptografada = md5($senha);
     echo $criptografada; // Exibe: 34819d7beeabb9260a5c854bc85b3e44
