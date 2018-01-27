@@ -32,7 +32,7 @@ if (!$_POST) {
                         <h3>Login</h3>
                     </div>
                     <form method="post" id="formu" class="loginForm" >
-                        <div class="input-group">
+                        <div class="row">
                             <input type="text" id="name" class="form-control" placeholder="Usuário" name="txtlogin">
                             <input  type="password" id="paw" class="form-control" placeholder="Senha" name="txtsenha">
                             <div <div class="row">

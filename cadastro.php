@@ -10,10 +10,10 @@ include('dbconnect.php')
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 
-<script src="js/login.js"></script>
+<script src="js/cadastro.js"></script>
 <!--<script src="js/jquery-2.1.1.min.js"></script>-->
 <script src="js/jquery.validate.js"></script>
-<script src="js/validacao.js"></script>
+<script src="js/validacaocadastro.js"></script>
 <link rel="stylesheet" href="css/bootstrap.min.css">
 
 
@@ -26,15 +26,19 @@ if (!$_POST) {
 
     <div class="container">
         <div class="row">
-            <div class="col-md-4 col-md-offset-4 text-center">
+            <div class="col-md-4 col-md-offset-6 text-center">
                 <div class="search-box">
                     <div class="caption">
                         <h3>Cadastro</h3>
                     </div>
-                    <form method="post" id="formu" class="loginForm" >
-                        <div class="input-group">
-                            <input type="text" id="name" class="form-control" placeholder="Usuário" name="txtlogin">
-                            <input  type="password" id="paw" class="form-control" placeholder="Senha" name="txtsenha">
+                    <form action="inserir.php" method="post" id="formuCadas" class="loginForm" >
+                        <div class="row">
+                            <input type="text" id="nome" class="form-control" placeholder="Usuário" name="txtnome">
+
+                            <input type="text" id="login" class="form-control" placeholder="Login" name="txtlogin">
+                            <input  type="password" id="psw" class="form-control" placeholder="Senha" name="txtsenha">
+                            <input  type="password" id="psw2" class="form-control" placeholder="Repita a senha" name="txtsenha2">
+
                             <div <div class="row">
                                 <div class="col-md-12">
                                 <input type="submit" id="submit" class="form-control" value="Cadastrar">
@@ -69,25 +73,24 @@ if (!$_POST) {
 }
 else
 {
-
-    $txtlogin = $_POST["txtlogin"];
-    $txtsenha = $_POST["txtsenha"];
-
-    // Variável com a senha guardadsfda
-    $senha = $txtsenha;
-    $criptografada = md5($senha);
-    echo $criptografada; // Exibe: 34819d7beeabb9260a5c854bc85b3e44
-
-
+//    $nome = $_POST['txtnome'];
+//    $txtlogin = $_POST["txtlogin"];
+//    $txtsenha = $_POST["txtsenha"];
 //
-//    $consulta = mysqli_query($link, "SELECT * FROM usuarios WHERE login='$txtlogin' AND senha='$txtsenha'");
+//    // Variável com a senha
+//    $senha = $txtsenha;
+//    $criptografada = md5($senha);
+//    $sql = "INSERT INTO usuario (nome, login, senha) VALUES ";
+//    if (mysqli_connect_errno())
+//    {
+//        // CASO TENHA ERROS MOSTRA O ERRO DE LIGAÇÃO À BASE DE DADOS
+//        echo "Failed to connect to MySQL: " . mysqli_connect_error();
+//    }
 //
-//    $resultado = mysqli_fetch_array($consulta);
+//// CASO TUDO ESTEJA OK INSERE DADOS NA BASE DE DADOS
+//    $sql="INSERT INTO suites (nome, telefone, email) VALUES ('$_POST[nome]','$_POST[telefone]','$_POST')";
 //
-//
-//    echo "Olá, " .$resultado['nome_completo'];
 
-//            echo $consulta;
 }
 ?>
 </body>
