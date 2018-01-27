@@ -13,26 +13,42 @@ if((!isset ($_SESSION['login']) == true) and (!isset ($_SESSION['senha']) == tru
 
 $logado = $_SESSION['login'];
 ?>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>SISTEMA WEB</title>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel='stylesheet' type='text/css' href='css/login.css'>
+    <script src="js/login.js"></script>
+    <!--<script src="js/jquery-2.1.1.min.js"></script>-->
+    <script src="js/jquery.validate.js"></script>
+    <script src="js/validacao.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Bem Vindo</title>
 </head>
 
+
 <body>
-<table width="800" height="748" border="1">
-  <tr>
-    <td height="90" colspan="2" bgcolor="#CCCCCC">SISTEM WEB TESTE
-    <?php
-    echo" Bem vindo $logado";
-    ?>
-    </td>
-  </tr>
-  <tr>
-    <td width="103" height="410" bgcolor="#CCCCCC">MENU AQUI</td>
-    <td width="546">CONTEUDO E ICONES AQUI</td>
-  </tr>
-  <tr>
-    <td colspan="2" bgcolor="#000000"> </td>
-  </tr>
-</table>
+
+<?php $logado?>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4 text-center">
+            <div class="search-box">
+                <div class="caption">
+                    <?php
+                    echo" <h3>Bem vindo $logado</h3>";
+                    ?>
+                </div>
+                <form action="logout.php">
+                    <div  class="col-md-12">
+                        <input type="submit" id="submit" class="form-control" value="Logout">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
 </body>
 </html>

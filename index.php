@@ -34,15 +34,17 @@ if (!$_POST) {
                         <div class="row">
                             <input type="text" id="name" class="form-control" placeholder="Usuário" name="txtlogin">
                             <input  type="password" id="paw" class="form-control" placeholder="Senha" name="txtsenha">
-                             <div class="row">
+                            <a href="cadastro.php" class="btn btn-link" >Cadastrar um novo usuário</a>
+                            <div class="row">
                                 <div class="col-md-6">
                                 <input type="submit" id="submit" class="form-control" value="Entrar">
                                 </div>
                                 <div class="col-md-6">
                                 <input type="reset" id="reset" class="form-control" value="Limpar">
                                 </div>
-
                             </div>
+
+
 
 
                         </div>
@@ -55,10 +57,6 @@ if (!$_POST) {
                         <h4>Regras da senha</h4>
                         <ul>
                             <li id="letter" class="invalid">Pelo menos <strong>uma Letra</strong></li>
-<!--                            <li id="capital" class="invalid">At least <strong>one capital letter</strong></li>-->
-<!--                            <li id="number" class="invalid">At least <strong>one number</strong></li>-->
-<!--                            <li id="length" class="invalid">Be at least <strong>8 characters</strong></li>-->
-<!--                            <li id="space" class="invalid">be<strong> use [~,!,@,#,$,%,^,&,*,-,=,.,;,']</strong></li>-->
                         </ul>
                     </div>
                 </div>
