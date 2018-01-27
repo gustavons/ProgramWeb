@@ -3,19 +3,19 @@ $(document).ready(function(){
     $('input[id="psw"]').keyup(function() {
         var pswd = $(this).val();
 
-        //validate the length
-        if ( pswd.length < 8) {
-            $('#length').removeClass('valid').addClass('invalid');
-        } else {
-            $('#length').removeClass('invalid').addClass('valid');
-        }
-        //
-        // //validate letter
-        // if ( pswd.match(/[A-z]/) ) {
-        //     $('#letter').removeClass('invalid').addClass('valid');
+        // //validate the length
+        // if ( pswd.length < 8) {
+        //     $('#length').removeClass('valid').addClass('invalid');
         // } else {
-        //     $('#letter').removeClass('valid').addClass('invalid');
+        //     $('#length').removeClass('invalid').addClass('valid');
         // }
+        //
+        //validate letter
+        if ( pswd.match(/[A-z]/) ) {
+            $('#letter').removeClass('invalid').addClass('valid');
+        } else {
+            $('#letter').removeClass('valid').addClass('invalid');
+        }
         //
         // //validate capital letter
         // if ( pswd.match(/[A-Z]/) ) {
@@ -47,11 +47,11 @@ $(document).ready(function(){
     $('input[id="psw2"]').keyup(function() {
         var pswd = $(this).val();
 
-        //validate the length
-        if ( pswd.length < 8) {
-            $('#length').removeClass('valid').addClass('invalid');
+        //validate letter
+        if ( pswd.match(/[A-z]/) ) {
+            $('#letter').removeClass('invalid').addClass('valid');
         } else {
-            $('#length').removeClass('invalid').addClass('valid');
+            $('#letter').removeClass('valid').addClass('invalid');
         }
 
 

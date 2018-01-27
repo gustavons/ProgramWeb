@@ -18,7 +18,7 @@ if (mysqli_connect_errno())
 }
 
 // CASO TUDO ESTEJA OK INSERE DADOS NA BASE DE DADOS
-$sql="INSERT INTO usuario (nome, login, senha) VALUES ('$nome','$txtlogin]','$criptografada')";
+$sql="INSERT INTO usuario (nome, login, senha) VALUES ('$nome','$txtlogin','$criptografada')";
 
 
 // CASO ESTEJA TUDO OK ADICIONA OS DADOS, SENÃO MOSTRA O ERRO

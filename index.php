@@ -6,15 +6,14 @@ include('dbconnect.php')
 <html>
 <meta charset="UTF-8">
 <title>BCC</title>
-<link rel='stylesheet' type='text/css' href='css/login.css'>
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel='stylesheet' type='text/css' href='css/login.css'>
 <script src="js/login.js"></script>
 <!--<script src="js/jquery-2.1.1.min.js"></script>-->
 <script src="js/jquery.validate.js"></script>
 <script src="js/validacao.js"></script>
-<link rel="stylesheet" href="css/bootstrap.min.css">
 
 
 </head>
@@ -31,16 +30,16 @@ if (!$_POST) {
                     <div class="caption">
                         <h3>Login</h3>
                     </div>
-                    <form method="post" id="formu" class="loginForm" >
+                    <form method="post" id="formu" class="loginForm" action="logar.php"  >
                         <div class="row">
                             <input type="text" id="name" class="form-control" placeholder="Usuário" name="txtlogin">
                             <input  type="password" id="paw" class="form-control" placeholder="Senha" name="txtsenha">
-                            <div <div class="row">
+                             <div class="row">
                                 <div class="col-md-6">
-                                <input type="submit" id="submit" class="form-control" value="Submit">
+                                <input type="submit" id="submit" class="form-control" value="Entrar">
                                 </div>
                                 <div class="col-md-6">
-                                <input type="reset" id="reset" class="form-control" value="Reset">
+                                <input type="reset" id="reset" class="form-control" value="Limpar">
                                 </div>
 
                             </div>

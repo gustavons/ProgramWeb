@@ -8,7 +8,8 @@ $().ready(function () {
                 required: true
             },
             txtsenha2: {
-                required: true
+                required: true,
+                equalTo: "#psw"
             }
         },
         messages: {
@@ -19,7 +20,8 @@ $().ready(function () {
 
             },
             txtsenha2: {
-                required: "Senha vazia, por favor insira a senha"
+                required: "Senha vazia, por favor insira a senha",
+                equalTo: "Senhas não coincidem "
 
             }
         }
