@@ -1,5 +1,5 @@
 <?php
-    $link = mysqli_connect('localhost', 'root', '', 'bcc2014');
+    $link = pg_connect("host=localhost port=5432 dbname=bcc2014 user=postgres password=postgres");
 //
 //    if (!$link) {
 //        echo 'Error: Unable to connect to MySQL.' . PHP_EOL;
